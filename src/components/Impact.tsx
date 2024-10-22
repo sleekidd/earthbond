@@ -18,10 +18,10 @@ const Impact: React.FC = () => {
             </div>
           </div>
           <div className="group flex flex-col w-full justify-center max-w-[488px] p-[32px] shadow-custom gap-[16px] h-[342px] rounded-[8px] transition-all duration-300 hover:bg-gradient-to-br from-[rgba(55,244,205,0.5)] to-[rgba(7,66,41,0.5)]">
-            <h1 className="text-[#074229] text-[56px] lg:text-[72px] font-bold leading-[56px] leading-[72px]">
+            <h1 className="text-[#074229] text-[48px] lg:text-[72px] font-bold leading-[48px] leading-[72px]">
               100 MW
             </h1>
-            <p className="text-[#074229] text-[24px] font-bold leading-[24px]">
+            <p className="text-[#074229] text-[18px] lg:text-[24px] font-bold leading-[18px] leading-[24px]">
               Clean Energy Delivered
             </p>
             <p className="text-[#074229] text-[16px] leading-[26px]">
@@ -31,10 +31,10 @@ const Impact: React.FC = () => {
         </div>
         <div className="flex flex-col lg:flex-row gap-[20px]">
           <div className="group flex flex-col w-full justify-center max-w-[488px] p-[32px] shadow-custom gap-[16px] h-[342px] rounded-[8px] transition-all duration-300 hover:bg-gradient-to-br from-[rgba(55,244,205,0.5)] to-[rgba(7,66,41,0.5)]">
-            <h1 className="text-[#074229] text-[56px] lg:text-[72px] font-bold leading-[56px] leading-[72px]">
+            <h1 className="text-[#074229] text-[48px] lg:text-[72px] font-bold leading-[48px] leading-[72px]">
               500,000
             </h1>
-            <p className="text-[#074229] text-[24px] font-bold leading-[24px]">
+            <p className="text-[#074229] text-[18px] lg:text-[24px] font-bold leading-[18px] leading-[24px]">
               Tons of CO2 Offset
             </p>
             <p className="text-[#074229] text-[16px] leading-[26px]">
@@ -42,10 +42,10 @@ const Impact: React.FC = () => {
             </p>
           </div>
           <div className="group flex flex-col w-full justify-center max-w-[488px] p-[32px] shadow-custom gap-[16px] h-[342px] rounded-[8px] transition-all duration-300 hover:bg-gradient-to-br from-[rgba(55,244,205,0.5)] to-[rgba(7,66,41,0.5)]">
-            <h1 className="text-[#074229] text-[56px] lg:text-[72px] font-bold leading-[56px] leading-[72px]">
+            <h1 className="text-[#074229] text-[48px] lg:text-[72px] font-bold leading-[48px] leading-[72px]">
               1 Million
             </h1>
-            <p className="text-[#074229] text-[24px] font-bold leading-[24px]">
+            <p className="text-[#074229] text-[18px] lg:text-[24px] font-bold leading-[18px] leading-[24px]">
               carbon credits for sale
             </p>
             <p className="text-[#074229] text-[16px] leading-[26px]">
