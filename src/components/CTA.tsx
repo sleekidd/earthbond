@@ -1,9 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import PrimaryButton from "./PrimaryButton";
 import TertiaryButton from "./TertiaryButton";
-// import PrimaryButton from "./PrimaryButton";
+import Modal from './Modal';
 
 const CTA: React.FC = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+  
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
   return (
     <div className="flex flex-col w-full max-w-[1200px] justify-between mx-[16px] lg:mx-auto rounded-[12px] gap-8 m-[20px] py-[56px]">
       <div className="flex flex-col w-full max-w-[1200px] lg:flex-row gap-[64px] justify-between items-start lg:items-center">
@@ -14,8 +19,9 @@ const CTA: React.FC = () => {
           <p className="text-white text-[16px]">Contact Earthbond today to purchase carbon credits and support clean energy.</p>
         </div>
         <div className="flex flex-col gap-[16px]">
-            <PrimaryButton text="Contact Us for Carbon Credits" />
+            <PrimaryButton text="Contact Us for Carbon Credits" onClick={openModal}  />
             <TertiaryButton text="Learn About Our Impact" />
+          {isModalOpen && <Modal closeModal={closeModal} />}
         </div>
       </div>
     </div>

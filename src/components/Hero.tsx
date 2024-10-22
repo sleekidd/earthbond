@@ -1,10 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import herobg from "../../public/earthbond-hero-bg.svg";
 import Navbar from "./Navbar";
 import PrimaryButton from "./PrimaryButton";
 import TertiaryButton from "./TertiaryButton";
+import Modal from "./Modal";
 
 const Hero: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+
   return (
     <div className="flex flex-row justify-center max-w-[100%] rounded-[12px] px-[24px] lg:px-[48px] py-[24px] lg:py-[24px] items-start bg-cover bg-center bg-no-repeat h-screen max-h-[752px] gap-[16px] lg:gap-[50px] m-[12px] lg:m-[20px]" style={{ backgroundImage: `url(${herobg})` }}>
       <div className="flex flex-col max-w-[1200px] w-full h-[550px] lg:h-[409px] justify-between">
@@ -22,8 +29,9 @@ const Hero: React.FC = () => {
                 </p>
               </div>
               <div className="flex flex-col lg:flex-row gap-[16px]">
-                <PrimaryButton text="Contact Us for Carbon Credits" />
+                <PrimaryButton text="Contact Us for Carbon Credits" onClick={openModal} />
                 <TertiaryButton text="Learn About Our Impact" />
+                {isModalOpen && <Modal closeModal={closeModal} />}
               </div>
             </div>
           </div>

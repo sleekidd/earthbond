@@ -1,12 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import WhyUsProp from "../WhyUs/WhyUsProp";
 import cell from "../../assets/solar-cell.svg";
 import panel from "../../assets/solar-panels.svg";
 import energy from "../../assets/renewable-energy.svg";
 import Checkmark from "../../assets/Check icon.svg";
 import PrimaryButton from "../PrimaryButton";
+import Modal from '../Modal'
 
 const WhyUs: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <div className="flex flex-col justify-center max-w-[100%] rounded-[12px] bg-[#074229] bg-cover bg-center bg-no-repeat gap-8 m-[20px] py-[56px]">
       <div className="flex flex-col items-start w-[100%] lg:w-[1200px] mx-auto gap-[24px] px-4 lg:px-0">
@@ -58,7 +64,8 @@ const WhyUs: React.FC = () => {
         Interested in Carbon Credits?
         </p>
         <div className="flex flex-col gap-[16px]">
-          <PrimaryButton text="Get in Touch with Us" />
+          <PrimaryButton text="Get in Touch with Us" onClick={openModal} />
+          {isModalOpen && <Modal closeModal={closeModal} />}
         </div>
       </div>
     </div>
