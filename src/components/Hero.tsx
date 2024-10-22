@@ -1,5 +1,5 @@
 import React from "react";
-import herobg from "../assets/earthbond-hero-bg.svg";
+import herobg from "../../public/earthbond-hero-bg.svg";
 import Navbar from "./Navbar";
 import PrimaryButton from "./PrimaryButton";
 import TertiaryButton from "./TertiaryButton";
