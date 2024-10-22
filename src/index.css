@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Mona-Sans';
+    src: url('/src/assets/fonts/Mona-Sans-BlackWide.ttf') format('truetype');
+    font-weight: black;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Mona-Sans';
+    src: url('/src/assets/fonts/Mona-Sans-BoldWide.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Mona-Sans';
+    src: url('/src/assets/fonts/Mona-Sans-RegularWide.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Mona-Sans';
+    src: url('/src/assets/fonts/Mona-Sans-MediumWide.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Mona-Sans';
+    src: url('/src/assets/fonts/Mona-Sans-SemiBoldWide.ttf') format('truetype');
+    font-weight: semibold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Onest';
+    src: url('/src/assets/fonts/Onest-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Onest';
+    src: url('/src/assets/fonts/Onest-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Onest';
+    src: url('/src/assets/fonts/Onest-SemiBold.ttf') format('truetype');
+    font-weight: semibold;
+    font-style: normal;
+  }
+
+  :root {
+    font-family: 'Mona-Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-color: #FBF8F5;
+  
+  }
